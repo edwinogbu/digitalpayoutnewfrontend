@@ -24,7 +24,122 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+   
+    <meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Digital | Pay Out</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- favicon -->		
+		<link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.ico">
+
+		<!-- all css here -->
+
+		<!-- bootstrap v3.3.6 css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- owl.carousel css -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.transitions.css">
+       <!-- Animate css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- meanmenu css -->
+        <link rel="stylesheet" href="css/meanmenu.min.css">
+		<!-- font-awesome css -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/themify-icons.css">
+		<link rel="stylesheet" href="css/flaticon.css">
+		<!-- magnific css -->
+        <link rel="stylesheet" href="css/magnific.min.css">
+		<!-- style css -->
+		<link rel="stylesheet" href="style.css">
+		<!-- responsive css -->
+		<link rel="stylesheet" href="css/responsive.css">
+
+		<!-- modernizr css -->
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <style>
+    .crypto-carousel-area {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    z-index: 1;
+
+    /* background: rgba(0, 0, 0, 0) url('img/slider/h1.jpg') no-repeat scroll top center / cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative; */
+}
+
+.carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.carousel-image {
+    flex: 1;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.carousel-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.carousel-text {
+    flex: 1;
+    color: #fff;
+    text-align: right;
+    padding-left: 20px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.carousel-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.carousel-text p {
+    font-size: 18px;
+}
+
+.testimonial-card{
+    background-color: #000033;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+        </style>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +154,26 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+   
+		<!-- jquery latest version -->
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+		<!-- bootstrap js -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- owl.carousel js -->
+		<script src="js/owl.carousel.min.js"></script>
+		  <!-- stellar js -->
+        <script src="js/jquery.stellar.min.js"></script>
+		<!-- magnific js -->
+        <script src="js/magnific.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+        <!-- meanmenu js -->
+        <script src="js/jquery.meanmenu.js"></script>
+		<!-- Form validator js -->
+		<script src="js/form-validator.min.js"></script>
+		<!-- plugins js -->
+		<script src="js/plugins.js"></script>
+		<!-- main js -->
+		<script src="js/main.js"></script>
   </body>
 </html>
