@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Footer.css'; // Assuming you have a CSS file for additional styling
+// import './Footer.css'; 
 
 const Footer = () => {
   return (
@@ -13,8 +13,8 @@ const Footer = () => {
               <div className="footer-content logo-footer">
                 <div className="footer-head">
                   <div className="footer-logo">
-                    <Link className="footer-black-logo" to="#">
-                      <img src="./images/instruction-4.png" alt="Footer Logo" />
+                    <Link className="footer-black-logo" to="/">
+                      <img src="./images/dlogo.png" alt="Footer Logo" width={80} height={80}/>
                     </Link>
                   </div>
                   <p>
@@ -115,14 +115,14 @@ const Footer = () => {
         </div>
       </div>
       
-      <div className="footer-area-bottom" style={{ color: '#fff', backgroundColor: '#000033' }}>
+      <div className="footer-area-bottom" style={{ color: "#000033", backgroundColor: "#f5d108" }}>
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-sm-6 col-xs-12">
               <div className="copyright">
                 <p>
-                  Copyright © 2020
-                  <Link to="#">Aievari</Link> All Rights Reserved
+                  Copyright © 2024
+                  <Link to="#">Digital PayOut</Link> All Rights Reserved
                 </p>
               </div>
             </div>

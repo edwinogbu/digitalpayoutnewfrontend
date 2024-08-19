@@ -35,7 +35,6 @@ const App = () => {
             <Route path="/register" element={<SignUp />} />
             <Route path="/login/*" element={<SignIn />} />
             <Route path="/investment" element={<Investment />} />
-            {/* <Route path="/market/:coinId" element={<MarketDetail />} /> */}
             {/* <Route
               path={`${dashboardBasePath}/*`}
               element={<PrivateRoute element={<Dashboard />} />}

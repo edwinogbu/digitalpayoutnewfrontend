@@ -1,0 +1,61 @@
+.trending-coin-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .trending-coin-list {
+    display: flex;
+    gap: 15px;
+    animation: scroll 30s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .trending-coin-card {
+    background-color: #001f4d;
+    border-radius: 8px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+  }
+  
+  .rank {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .coin-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .proses-text h4 {
+    font-size: 16px;
+    margin: 0;
+    color: #FFF;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .trending-coin-card {
+      width: 120px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .trending-coin-card {
+      width: 100px;
+    }
+  }
+  

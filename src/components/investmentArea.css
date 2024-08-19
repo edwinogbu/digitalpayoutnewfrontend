@@ -1,0 +1,111 @@
+/* InvestArea.css */
+
+/* Container for the invest area */
+.invest-area {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Style for each investment plan card */
+  .pri_table_list {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    /* Make sure the card has a position relative for the image positioning */
+  }
+  
+  /* Image wrapper to center the image */
+  .card-image-wrapper {
+    position: absolute;
+    top: -50px; /* Adjust to place the image correctly */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px; /* Adjust size as needed */
+    height: 120px; /* Adjust size as needed */
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #000033;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure the image stays above the card content */
+  }
+  
+  /* Style for the image inside the wrapper */
+  .card-image {
+    width: 200%; /* Make image larger to show half outside */
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(-25%); /* Adjust to align the image properly */
+  }
+  
+  /* Price section */
+  .top-price-inner {
+    margin-top: 70px; /* Adjust to make space for the image */
+  }
+  
+  .rates {
+    font-size: 24px;
+    color: #000033;
+  }
+  
+  .prices {
+    font-weight: bold;
+  }
+  
+  .users {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Styling for the plan labels */
+  .base {
+    display: block;
+    background-color: #000033;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  /* Style for the deposit button */
+  .price-btn a {
+    background-color: #000033;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .price-btn a:hover {
+    background-color: #fff;
+    color: #000033;
+    border: 1px solid #000033;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .card-image-wrapper {
+      width: 100px;
+      height: 100px;
+      top: -40px; /* Adjust for smaller screens */
+    }
+  
+    .card-image {
+      width: 200%;
+    }
+  
+    .top-price-inner {
+      margin-top: 50px;
+    }
+  }
+  

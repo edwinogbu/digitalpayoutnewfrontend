@@ -54,6 +54,18 @@ export const getTrendingCoins = async () => {
   }
 }
 
+// export const getTrendingCoins = async () => {
+//   try {
+//     const response = await fetch('https://api.coingecko.com/api/v3/search/trending?include_platform=false');
+//     const data = await response.json();
+//     return data.coins || []; 
+//   } catch (error) {
+//     console.error('Error fetching trending coins:', error);
+//     return []; // Return empty array in case of error
+//   }
+// };
+
+
 export const getExchangeRates = async () => {
   try {
     const response = await axios.get(`https://api.coingecko.com/api/v3/exchange_rates?include_platform=false`)
