@@ -1555,7 +1555,7 @@ function WelcomePage() {
             <div className="carousel-image col-sm-4">
               <img src="./img/crypto/cryto6.jpeg" alt="Crypto 1" />
               <p className="text-white" style={{
-                  fontFamily: "'Brush Script MT', cursive",
+                  // fontFamily: "'Brush Script MT', cursive",
                   fontWeight: "bold",
                   color: "#fff",
                   fontSize: "36px",  
@@ -1566,10 +1566,10 @@ function WelcomePage() {
             </div>
             <div className="carousel-text col-sm-8">
               <h2 className="text-white" style={{
-                  fontFamily: "'Brush Script MT', cursive",
+                  // fontFamily: "'Brush Script MT', cursive",
                   fontWeight: "bold",
                   color: "#fff",
-                  fontSize: "36px",  
+                  fontSize: "16px",  
                   lineHeight: "1.2", 
               }}>
                 
@@ -1580,7 +1580,7 @@ function WelcomePage() {
                   // fontFamily: "'Brush Script MT', cursive",
                   fontWeight: "bold",
                   color: "#fff",
-                  fontSize: "36px",  
+                  fontSize: "16px",  
                   lineHeight: "1.2", 
               }}>
             - Potential for high returns on investment
@@ -1595,10 +1595,10 @@ function WelcomePage() {
             </div>
             <div className="carousel-text col-sm-8">
               <h2 className="text-white"style={{
-                  fontFamily: "'Brush Script MT', cursive",
+                  // fontFamily: "'Brush Script MT', cursive",
                   fontWeight: "bold",
                   color: "#fff",
-                  fontSize: "36px",  
+                  fontSize: "16px",  
                   lineHeight: "1.2", 
               }}>
               Join the Digital PayOut community today and discover the benefits of investing in Bitcoin, including:
@@ -1608,7 +1608,7 @@ function WelcomePage() {
         // fontFamily: "'Brush Script MT', cursive",
         fontWeight: "bold",
         color: "#fff",
-        fontSize: "36px",  // Adjust the size as needed
+        fontSize: "26px",  // Adjust the size as needed
         lineHeight: "1.2",  // Adjust the line height if needed
     }}>- Diversification of your investment portfolio
    
@@ -1623,10 +1623,10 @@ function WelcomePage() {
             </div>
             <div className="carousel-text col-sm-8">
               <h2 className="text-white" style={{
-                  fontFamily: "'Brush Script MT', cursive",
+                  // fontFamily: "'Brush Script MT', cursive",
                   fontWeight: "bold",
                   color: "#fff",
-                  fontSize: "36px",  
+                  fontSize: "26px",  
                   lineHeight: "1.2", 
               }}>
               Join the Digital PayOut community today and discover the benefits of investing in Bitcoin, including:
@@ -1636,7 +1636,7 @@ function WelcomePage() {
         // fontFamily: "'Brush Script MT', cursive",
         fontWeight: "bold",
         color: "#fff",
-        fontSize: "36px",  // Adjust the size as needed
+        fontSize: "26px",  // Adjust the size as needed
         lineHeight: "1.2",  // Adjust the line height if needed
     }}> - investing and investment withdrawal </p>
             </div>
@@ -1675,7 +1675,7 @@ function WelcomePage() {
                     </div>
       <div className="section-headline text-center">
     <h3 style={{
-        fontFamily: "'Brush Script MT', cursive",
+        // fontFamily: "'Brush Script MT', cursive",
         fontWeight: "bold",
         color: "#000033",
         fontSize: "46px", 
@@ -1796,7 +1796,7 @@ function WelcomePage() {
             <div className="col-md-12 col-sm-12 col-xs-12">
                 <div className="section-headline text-center">
                     <h3 style={{
-                        fontFamily: "'Brush Script MT', cursive",
+                        // fontFamily: "'Brush Script MT', cursive",
                         fontWeight: "bold",
                         color: "#fff",
                         fontSize: "46px",
