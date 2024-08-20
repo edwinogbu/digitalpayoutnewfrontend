@@ -1558,7 +1558,7 @@ function WelcomePage() {
                   // fontFamily: "'Brush Script MT', cursive",
                   fontWeight: "bold",
                   color: "#fff",
-                  fontSize: "36px",  
+                  fontSize: "16px",  
                   lineHeight: "1.2", 
               }}>
             - Potential for high returns on investment
@@ -1608,7 +1608,7 @@ function WelcomePage() {
         // fontFamily: "'Brush Script MT', cursive",
         fontWeight: "bold",
         color: "#fff",
-        fontSize: "26px",  // Adjust the size as needed
+        fontSize: "16px",  // Adjust the size as needed
         lineHeight: "1.2",  // Adjust the line height if needed
     }}>- Diversification of your investment portfolio
    
@@ -1626,7 +1626,7 @@ function WelcomePage() {
                   // fontFamily: "'Brush Script MT', cursive",
                   fontWeight: "bold",
                   color: "#fff",
-                  fontSize: "26px",  
+                  fontSize: "16px",  
                   lineHeight: "1.2", 
               }}>
               Join the Digital PayOut community today and discover the benefits of investing in Bitcoin, including:
@@ -1636,7 +1636,7 @@ function WelcomePage() {
         // fontFamily: "'Brush Script MT', cursive",
         fontWeight: "bold",
         color: "#fff",
-        fontSize: "26px",  // Adjust the size as needed
+        fontSize: "16px",  // Adjust the size as needed
         lineHeight: "1.2",  // Adjust the line height if needed
     }}> - investing and investment withdrawal </p>
             </div>
@@ -1678,7 +1678,7 @@ function WelcomePage() {
         // fontFamily: "'Brush Script MT', cursive",
         fontWeight: "bold",
         color: "#000033",
-        fontSize: "46px", 
+        fontSize: "16px", 
         lineHeight: "1.2", 
     }}>
         Testimonials
@@ -1799,7 +1799,7 @@ function WelcomePage() {
                         // fontFamily: "'Brush Script MT', cursive",
                         fontWeight: "bold",
                         color: "#fff",
-                        fontSize: "46px",
+                        fontSize: "16px",
                         lineHeight: "1.2",
                     }}>Why Choose Digital PayOut</h3>
                     <p  style={{color:'white'}}>Welcome to Digital PayOut, your gateway to the world of cryptocurrency investment. Tap into the potential of Bitcoin and earn massive ROI with our secure, user-friendly platform, designed for both individual and institutional investors.</p>

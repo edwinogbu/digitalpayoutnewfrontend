@@ -59,23 +59,26 @@ const InvestArea = () => {
             </div> */}
              <div className="section-headline text-center">
           <h3 style={{
-        fontFamily: "'Brush Script MT', cursive",
-        fontWeight: "bold",
-        color: "#000033",
-        fontSize: "46px",  
-        lineHeight: "1.2",  
-    }}>
-              Investment Offer
-          </h3>
-          <h2>
-              OUR INVESTMENT BEST PLANS
-          </h2>
-          <p style={{
-        fontFamily: "'Brush Script MT', cursive",
+        // fontFamily: "'Brush Script MT', cursive",
         // fontWeight: "bold",
         color: "#000033",
-        fontSize: "26px",  // Adjust the size as needed
-        lineHeight: "1.2",  // Adjust the line height if needed
+        fontSize: "26px",  
+        lineHeight: "1.2",  
+    }}>
+              INVESTMENT OFFER
+          </h3>
+          <h5>
+              Our Investment Best Plans
+          </h5>
+          <p style={{
+        // fontFamily: "'Brush Script MT', cursive",
+        // fontWeight: "bold",
+        color: "#000033",
+        fontSize: "16px",  // Adjust the size as needed
+        // lineHeight: "1.2", 
+        paddingBottom:'25',
+        marginBottom:'25',
+        margin:'25',
     }} >
               Our experts have set up these investment plans strategically, which minizes your risk
               of investment and maximizes the return of interest

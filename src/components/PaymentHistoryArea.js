@@ -26,13 +26,13 @@ const PaymentHistoryArea = () => {
           <div className="col-md-12 col-sm-12 col-xs-12">
             <div className="section-headline text-center">
               <h3 style={{
-                fontWeight: "bold",
+                // fontWeight: "bold",
                 color: "#000033",
-                fontSize: "46px", 
+                fontSize: "26px", 
                 lineHeight: "1.2",
               }}>Deposits and Withdrawals: Evidence of Investor Success</h3>
               <p style={{
-                fontWeight: "bold",
+                // fontWeight: "bold",
                 color: "#000033",
                 // fontSize: "16px", 
                 lineHeight: "1.2",
@@ -50,7 +50,8 @@ const PaymentHistoryArea = () => {
                 <h4>Recent Deposits</h4>
                 <span><i className="flaticon-005-savings"></i></span>
                 <div className="deposite-table">
-                  <table>
+                  <table  className="table table-striped  table-hover table-sm">
+                  <caption>we are proud to showcase the recent transactions made by our valued investors.</caption>
                     <thead style={{ backgroundColor: "#000033", color: "#fff" }}>
                       <tr>
                         <th>Name</th>
@@ -78,7 +79,8 @@ const PaymentHistoryArea = () => {
                 <h4>Recent Withdrawals</h4>
                 <span><i className="flaticon-042-wallet"></i></span>
                 <div className="deposite-table">
-                  <table>
+                <table  className="table table-striped  table-hover table-sm">
+                <caption>we are proud to showcase the recent transactions made by our valued investors.</caption>
                     <thead style={{ backgroundColor: "#000033", color: "#fff" }}>
                       <tr>
                         <th>Name</th>
