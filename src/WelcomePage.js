@@ -1554,17 +1554,9 @@ function WelcomePage() {
           <div className="carousel-content">
             <div className="carousel-image col-sm-4">
               <img src="./img/crypto/cryto6.jpeg" alt="Crypto 1" />
-              <p className="text-white" style={{
-                  // fontFamily: "'Brush Script MT', cursive",
-                  fontWeight: "bold",
-                  color: "#fff",
-                  fontSize: "16px",  
-                  lineHeight: "1.2", 
-              }}>
-            - Potential for high returns on investment
-          </p>
+              
             </div>
-            <div className="carousel-text col-sm-8">
+            <div className="carousel-text col-sm-12">
               <h2 className="text-white" style={{
                   // fontFamily: "'Brush Script MT', cursive",
                   fontWeight: "bold",
@@ -1573,17 +1565,27 @@ function WelcomePage() {
                   lineHeight: "1.2", 
               }}>
                 
-                Join the Digital PayOut community today and discover the benefits of investing in Bitcoin, including:
+                Join the Digital PayOut community 
+                {/* today and discover the benefits of investing in Bitcoin, including: */}
 
                 </h2>
               <p className="text-white" style={{
                   // fontFamily: "'Brush Script MT', cursive",
                   fontWeight: "bold",
                   color: "#fff",
-                  fontSize: "16px",  
+                  fontSize: "12px",  
                   lineHeight: "1.2", 
               }}>
             - Potential for high returns on investment
+          </p>
+          <p className="text-white" style={{
+                  // fontFamily: "'Brush Script MT', cursive",
+                  fontWeight: "bold",
+                  color: "#fff",
+                  fontSize: "12px",  
+                  lineHeight: "1.2", 
+              }}>
+            - investing and investment withdrawal
           </p>
             </div>
           </div>
@@ -1592,27 +1594,41 @@ function WelcomePage() {
           <div className="carousel-content">
             <div className="carousel-image col-sm-4">
               <img src="./img/crypto/cryto2.jpeg" alt="Crypto 2" />
+              
             </div>
-            <div className="carousel-text col-sm-8">
+            <div className="carousel-text col-sm-12">
               <h2 className="text-white"style={{
                   // fontFamily: "'Brush Script MT', cursive",
                   fontWeight: "bold",
                   color: "#fff",
-                  fontSize: "16px",  
+                  fontSize: "12px",  
                   lineHeight: "1.2", 
               }}>
-              Join the Digital PayOut community today and discover the benefits of investing in Bitcoin, including:
+              Join the Digital PayOut community 
+              {/* today and discover the benefits of investing in Bitcoin,  */}
+              {/* including: */}
 
                 </h2>
               <p className="text-white" style={{
-        // fontFamily: "'Brush Script MT', cursive",
-        fontWeight: "bold",
-        color: "#fff",
-        fontSize: "16px",  // Adjust the size as needed
-        lineHeight: "1.2",  // Adjust the line height if needed
-    }}>- Diversification of your investment portfolio
-   
-    </p>
+                    // fontFamily: "'Brush Script MT', cursive",
+                    fontWeight: "bold",
+                    color: "#fff",
+                    fontSize: "12px",  // Adjust the size as needed
+                    lineHeight: "1.2",  // Adjust the line height if needed
+                }}>
+                  - Diversification of your investment portfolio
+              
+                </p>
+                <p style={{
+                  // fontFamily: "'Brush Script MT', cursive",
+                  fontWeight: "bold",
+                  color: "#fff",
+                  fontSize: "12px",  
+                  lineHeight: "1.2", 
+              }}>
+              - investing and investment withdrawal
+
+              </p>
             </div>
           </div>
         </div>
@@ -1620,25 +1636,40 @@ function WelcomePage() {
           <div className="carousel-content">
             <div className="carousel-image col-sm-4">
               <img src="./img/crypto/cryto3.jpeg" alt="Crypto 3" />
+             
             </div>
-            <div className="carousel-text col-sm-8">
+            <div className="carousel-text col-sm-12">
               <h2 className="text-white" style={{
                   // fontFamily: "'Brush Script MT', cursive",
                   fontWeight: "bold",
                   color: "#fff",
-                  fontSize: "16px",  
+                  fontSize: "12px",  
                   lineHeight: "1.2", 
               }}>
-              Join the Digital PayOut community today and discover the benefits of investing in Bitcoin, including:
+              Join the Digital PayOut community 
+              {/* today and discover the benefits of investing in Bitcoin, including: */}
 
                 </h2>
               <p className="text-white"  style={{
-        // fontFamily: "'Brush Script MT', cursive",
-        fontWeight: "bold",
-        color: "#fff",
-        fontSize: "16px",  // Adjust the size as needed
-        lineHeight: "1.2",  // Adjust the line height if needed
-    }}> - investing and investment withdrawal </p>
+                // fontFamily: "'Brush Script MT', cursive",
+                fontWeight: "bold",
+                color: "#fff",
+                fontSize: "12px",  // Adjust the size as needed
+                lineHeight: "1.2",  // Adjust the line height if needed
+            }}> 
+            - investing and investment withdrawal 
+            <p style={{
+                  // fontFamily: "'Brush Script MT', cursive",
+                  fontWeight: "bold",
+                  color: "#fff",
+                  fontSize: "12px",  
+                  lineHeight: "1.2", 
+              }}>
+              - Diversification of your investment portfolio
+
+              </p>
+            </p>
+
             </div>
           </div>
         </div>
