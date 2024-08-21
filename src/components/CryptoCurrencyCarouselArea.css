@@ -1,0 +1,65 @@
+.crypto-carousel-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* align-items: center; */
+  }
+  
+  .carousel-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .carousel-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .carousel-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-text h2 {
+      font-size: 16px;
+    }
+    .carousel-text p {
+      font-size: 12px;
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+    .carousel-text h2 {
+      font-size: 18px;
+    }
+    .carousel-text p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    .carousel-text h2 {
+      font-size: 20px;
+    }
+    .carousel-text p {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 993px) {
+    .carousel-text h2 {
+      font-size: 24px;
+    }
+    .carousel-text p {
+      font-size: 18px;
+    }
+  }
+  
