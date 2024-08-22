@@ -80,6 +80,8 @@ const CryptoCurrencyCarouselArea = () => {
               <div className="carousel-content">
                 <div className="carousel-image col-sm-4">
                   <img src={item.imgSrc} alt={`Crypto ${item.id}`} />
+                  <Link to="/register" className="ready-btn left-btn animated bounceIn" style={{ position: "absolute", top: "210px", padding: "5px", left: "50%", transform: "translateX(-50%)", zIndex: "-3" }}>Get started</Link>
+
                 </div>
                 <div className="carousel-text col-sm-12">
                   <h2 className="text-white" style={{ fontWeight: "bold", color: "#fff", fontSize: "16px", lineHeight: "1.2" }}>
