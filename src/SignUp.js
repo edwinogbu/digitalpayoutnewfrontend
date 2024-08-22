@@ -96,7 +96,10 @@ const SignUp = () => {
                   <h3>Register</h3>
                 </div>
                 <ul className="breadcrumb-bg" style={{ color: "#000033", backgroundColor: "#f5d108" }}>
-                  <li className="home-bread">Home</li>
+                  {/* <li className="home-bread">Home</li> */}
+                  <Link className="home-bread" to="/" style={{ color: "#fff", backgroundColor: "#f5d108" }}>
+                        Home
+                    </Link>
                   <li>Register</li>
                 </ul>
               </div>
