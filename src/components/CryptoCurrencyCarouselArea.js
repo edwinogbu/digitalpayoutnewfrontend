@@ -104,7 +104,7 @@ const CryptoCurrencyCarouselArea = () => {
           <span className="sr-only">Next</span>
         </a>
         <div className="layer-1-3">
-          <Link href="#" className="ready-btn left-btn animated bounceIn" style={{ position: "absolute", top: "210px", padding: "5px", left: "50%", transform: "translateX(-50%)", zIndex: "-3" }}>Get started</Link>
+          <Link to="/register" className="ready-btn left-btn animated bounceIn" style={{ position: "absolute", top: "210px", padding: "5px", left: "50%", transform: "translateX(-50%)", zIndex: "-3" }}>Get started</Link>
         </div>
       </div>
     </div>

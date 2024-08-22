@@ -1540,6 +1540,10 @@ const Header = () => {
                                 <div className="topbar-right">
                                     <div className="top-social">
                                         <ul>
+                                        <Link className="s-menu" to="http://localhost:3001/login">Sign In</Link>
+                                        <Link className="btn btn-primary s-menu" to="/register" style={{ marginLeft: '15px' }}>
+                                            Sign Up
+                                        </Link>
                                             <li><Link href="#"><i className="fa fa-pinterest" /></Link></li>
                                             <li><Link href="#"><i className="fa fa-skype" /></Link></li>
                                             <li><Link href="#"><i className="fa fa-google" /></Link></li>
@@ -1585,7 +1589,7 @@ const Header = () => {
                                     </div>
                                     <div className="col-md-9 col-sm-9">
                                         <div className="header-right-link">
-                                            <Link className="s-menu" to="http://localhost:3001/login">Account</Link>
+                                            <Link className="s-menu" to="http://localhost:3001/login">Wallet</Link>
                                             {/* <Link className="s-menu" to="/login">Account</Link> */}
                                         </div>
                                         {/* mainmenu start */}
@@ -1655,7 +1659,12 @@ const Header = () => {
                     <span className="icon-bar" />
                     <span className="icon-bar" />
                 </button>
-                
+                <button className="navbar-toggle" onClick={toggleMenu} aria-label="Toggle navigation"  style={{ margin: '30', justifySelf:'center', float:'left' }}>
+                <Link className="s-menu" to="http://localhost:3001/login" style={{ marginLeft: '15px', color:'yellow', border:"2px solid #f5d108",  }}>Sign In</Link>
+                <Link className="btn btn-primary s-menu" to="/register" style={{ marginLeft: '15px', color:'yellow', border:"2px solid #f5d108",  }}>
+                    Sign Up
+                </Link>
+              </button>
             </header>
             <div className  style={{ color: "#fff", border:"2px solid #000033", backgroundColor: "#000033", padding:50, }}>
                

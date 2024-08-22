@@ -1516,26 +1516,6 @@ function WelcomePage() {
 
 
 
-//   useEffect(() => {
-//     const fetchMarketData = async () => {
-//         const data = await getMarketData(); // Fetch market data
-//         setMarketData(data);
-//     };
-//     fetchMarketData();
-// }, []);
-
-  // const [navClass, setNavClass] = useState('navbar navbar-default');
-  // const [menuVisible, setMenuVisible] = useState(false);
-
-  // const toggleMenu = () => {
-  //   setMenuVisible((prevVisible) => !prevVisible);
-  //   setNavClass((prevClass) =>
-  //     prevClass.includes('active')
-  //       ? 'navbar navbar-default'
-  //       : 'navbar navbar-default active'
-  //   );
-  // };
-
   return (
     <>
       <div>

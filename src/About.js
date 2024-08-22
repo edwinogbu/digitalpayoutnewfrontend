@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
@@ -247,9 +248,9 @@ export default function About() {
                       Take the first step towards building your cryptocurrency investment with Digital PayOut. 
                       Learn more and start investing today!
                     </h3>
-                    <a className="banner-btn" href="#">
+                    <Link className="banner-btn" to="/register">
                       Open new account
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -276,9 +277,9 @@ export default function About() {
                     cutting-edge technology will guide you every step of the way to invest and earn profits on 
                     your investment.
                   </p>
-                  <a className="feature-btn" href="#">
+                  <Link className="feature-btn" to="/register">
                     Get started now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
