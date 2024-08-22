@@ -1660,7 +1660,7 @@ const Header = () => {
                     <span className="icon-bar" />
                 </button>
                 <button className="navbar-toggle" onClick={toggleMenu} aria-label="Toggle navigation"  style={{ margin: '30', justifySelf:'center', float:'left' }}>
-                <Link className="s-menu" to="http://localhost:3001/login" style={{ marginLeft: '15px', color:'yellow', border:"2px solid #f5d108",  }}>Sign In</Link>
+                <Link className="s-menu" to="/login" style={{ marginLeft: '15px', color:'yellow', border:"2px solid #f5d108",  }}>Sign In</Link>
                 <Link className="btn btn-primary s-menu" to="/register" style={{ marginLeft: '15px', color:'yellow', border:"2px solid #f5d108",  }}>
                     Sign Up
                 </Link>
