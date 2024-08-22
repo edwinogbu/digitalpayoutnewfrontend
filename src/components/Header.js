@@ -1540,7 +1540,7 @@ const Header = () => {
                                 <div className="topbar-right">
                                     <div className="top-social">
                                         <ul>
-                                        <Link className="s-menu" to="http://localhost:3001/login">Sign In</Link>
+                                        <Link className="s-menu" to="/login">Sign In</Link>
                                         <Link className="btn btn-primary s-menu" to="/register" style={{ marginLeft: '15px' }}>
                                             Sign Up
                                         </Link>
