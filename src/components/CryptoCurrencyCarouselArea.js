@@ -67,14 +67,14 @@ const CryptoCurrencyCarouselArea = () => {
   };
 
   return (
-    <div className="crypto-carousel-area w-25 h-25" style={{ backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/bg5.jpg')" }}>
+    <div className="crypto-carousel-area w-100 h-100 container-fluid" style={{ backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/bg5.jpg')" }}>
       <div id="cryptoCarousel" className="carousel slide" data-ride="carousel" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <ol className="carousel-indicators">
           {carouselItems.map((item, index) => (
             <li key={item.id} data-target="#cryptoCarousel" data-slide-to={index} className={index === currentIndex ? 'active' : ''} />
           ))}
         </ol>
-        <div className="carousel-inner">
+        <div className="carousel-inner col-sm-12">
           {carouselItems.map((item, index) => (
             <div key={item.id} className={`item ${index === currentIndex ? 'active' : ''}`}>
               <div className="carousel-content">

@@ -290,19 +290,28 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <div className="counter-area fix area-padding-2" style={{ paddingTop: "50px", border: "2px solid #000033", borderRadius: "25px" }}>
-      <div className="container">
+    <div className="counter-area fix area-padding-2" style={{ paddingTop: "50px", border: "2px solid #000033", borderRadius: "1px", backgroundColor:'#000033' }}>
+      <div className="container" style={{
+                        color: '#fff', 
+                        // border: '1px solid #f0e000', // Border color and width
+                        // borderRight: '1px solid #f0e000', // Border color and width
+                        // borderLeft: '1px solid #f0e000', // Border color and width
+                        // borderBottom: '1px solid #f0e000', // Border color and width
+                        borderRadius: '1px',       // Rounded corners
+                        backgroundColor:'#000033',
+                        paddingBottom:20,
+                      }}>
         <div className="section-headline text-center">
           <h3 style={{
-      // fontFamily: "'Brush Script MT', cursive",
-      fontWeight: "bold",
-      color: "#000033",
-      fontSize: "26px", 
-      lineHeight: "1.2", 
-  }}>
+          // fontFamily: "'Brush Script MT', cursive",
+            fontWeight: "bold",
+            color: "#fff",
+            fontSize: "26px", 
+            lineHeight: "1.2", 
+        }}>
             Testimonials
           </h3>
-          <p  style={{color:'#000033'}}>Welcome to Digital PayOut, your gateway to the world of cryptocurrency investment. Here’s what people are saying about us:</p>
+          <p  style={{color:'#fff'}}>Welcome to Digital PayOut, your gateway to the world of cryptocurrency investment. Here’s what people are saying about us:</p>
 
         </div>
 
@@ -319,7 +328,16 @@ const TestimonialCarousel = () => {
                 <div className={`item ${carouselIndex === currentIndex ? 'active' : ''}`} key={carouselIndex}>
                   <div className="row">
                     {testimonials.slice(carouselIndex * 4, carouselIndex * 4 + 4).map((testimonial) => (
-                      <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 testimonial-card" key={testimonial.id}>
+                      <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 testimonial-card" key={testimonial.id} style={{
+                        color: '#fff', 
+                        // border: '1px solid #f0e000', // Border color and width
+                        borderRight: '1px solid #f0e000', // Border color and width
+                        borderLeft: '1px solid #f0e000', // Border color and width
+                        // borderBottom: '1px solid #f0e000', // Border color and width
+                        borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#000033',
+                        paddingBottom:20,
+                      }}>
                         <div className="fun_text" style={{ minHeight: '200px', textAlign: 'center' }}>
                           <img 
                             src={testimonial.imagePath} 

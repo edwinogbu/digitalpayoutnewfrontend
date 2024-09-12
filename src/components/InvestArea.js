@@ -47,10 +47,28 @@ const InvestArea = () => {
   ];
 
   return (
-    <div className="invest-area bg-color area-padding-2">
+    <div className="invest-area bg-color area-padding-2" style={{
+      color: '#fff', 
+      // border: '1px solid #f0e000', // Border color and width
+      borderRight: '1px solid #f0e000', // Border color and width
+      borderLeft: '1px solid #f0e000', // Border color and width
+      // borderBottom: '1px solid #f0e000', // Border color and width
+      borderRadius: '1px',       // Rounded corners
+      backgroundColor:'#000033',
+      paddingBottom:20,
+    }}>
       <div className="container">
         <div className="row">
-          <div className="col-md-12 col-sm-12 col-xs-12">
+          <div className="col-md-12 col-sm-12 col-xs-12" style={{
+                        color: '#fff', 
+                        // border: '1px solid #f0e000', // Border color and width
+                        borderRight: '1px solid #f0e000', // Border color and width
+                        borderLeft: '1px solid #f0e000', // Border color and width
+                        // borderBottom: '1px solid #f0e000', // Border color and width
+                        borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#000033',
+                        paddingBottom:20,
+                      }}>
             {/* <div className="section-headline text-center">
               <h3>The best investment plan</h3>
               <p>
@@ -61,19 +79,19 @@ const InvestArea = () => {
           <h3 style={{
         // fontFamily: "'Brush Script MT', cursive",
         // fontWeight: "bold",
-        color: "#000033",
+        color: "#fff",
         fontSize: "26px",  
         lineHeight: "1.2",  
     }}>
               INVESTMENT OFFER
           </h3>
-          <h5>
+          <h5 style={{color:'#fff'}}>
               Our Investment Best Plans
           </h5>
           <p style={{
         // fontFamily: "'Brush Script MT', cursive",
-        // fontWeight: "bold",
-        color: "#000033",
+        fontWeight: "bold",
+        color: "#fff",
         fontSize: "16px",  // Adjust the size as needed
         // lineHeight: "1.2", 
         paddingBottom:'25',
@@ -89,11 +107,16 @@ const InvestArea = () => {
         </div>
         <div className="row pricing-content">
           {plans.map(plan => (
-            <div className="col-md-3 col-sm-6 col-xs-12" key={plan.id}>
+            <div className="col-md-3 col-sm-6 col-xs-12" key={plan.id} >
                <div className="card-image-wrapper">
                   <img src={plan.image} alt={plan.label} className="card-image" />
                 </div>
-              <div className="pri_table_list">
+              <div className="pri_table_list" style={{
+                        // border: '2px solid #000033', // Border color and width
+                        border: '5px solid #f0e000', // Border color and width
+                        borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#ffffff'
+                      }}>
                 {plan.label && <span className="base">{plan.label}</span>}
                 {/* <div className="card-image-wrapper">
                   <img src={plan.image} alt={plan.label} className="card-image" />
@@ -104,7 +127,7 @@ const InvestArea = () => {
                   </div>
                   <span className="per-day">{plan.duration}</span>
                 </div>
-                <ol className="pricing-text">
+                <ol className="pricing-text" style={{backgroundColor:'#f0f0ff', color:'#000033', textAlign:'center', borderRadius:1, padding:1,}}>
                   <li className="check">Minimum Invest : {plan.minInvest}</li>
                   <li className="check">Maximum Invest : {plan.maxInvest}</li>
                   <li className="check">Average Monthly : {plan.avgMonthly}</li>

@@ -1537,7 +1537,16 @@ function WelcomePage() {
 
 
   <div className="support-service-area fix area-padding-2" style={{ backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/bg4.jpg')" }}>
-    <div className="container">
+    <div className="container"  style={{
+                        color: '#fff', 
+                        // border: '1px solid #f0e000', // Border color and width
+                        borderRight: '1px solid #f0e000', // Border color and width
+                        borderLeft: '1px solid #f0e000', // Border color and width
+                        borderBottom: '1px solid #f0e000', // Border color and width
+                        borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#000033',
+                        paddingBottom:20,
+                      }}>
         <div className="row">
             <div className="col-md-12 col-sm-12 col-xs-12">
                 <div className="section-headline text-center">

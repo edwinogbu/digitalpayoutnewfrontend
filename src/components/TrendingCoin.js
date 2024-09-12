@@ -2033,7 +2033,16 @@ function TrendingCoin() {
 }, []);
 
   return (
-    <div className="work-proses fix bg-color area-padding-2">
+    <div className="work-proses fix bg-color area-padding-2" style={{
+      color: '#fff', 
+      // border: '1px solid #f0e000', // Border color and width
+      borderRight: '1px solid #f0e000', // Border color and width
+      borderLeft: '1px solid #f0e000', // Border color and width
+      borderBottom: '1px solid #f0e000', // Border color and width
+      borderRadius: '1px',       // Rounded corners
+      backgroundColor:'#000033',
+      paddingBottom:20,
+    }}>
       <div className="container">
         <div className="row">
           <div className="col-md-12 col-sm-12 col-xs-12">
@@ -2054,7 +2063,16 @@ function TrendingCoin() {
             <div className="trending-coin-wrapper">
               <div className="trending-coin-list">
                 {trendingCoins.length > 0 && trendingCoins.concat(trendingCoins).map((coin, index) => (
-                  <div className="trending-coin-card" key={index}>
+                  <div className="trending-coin-card" key={index}  style={{
+                    color: '#fff', 
+                    // border: '1px solid #f0e000', // Border color and width
+                    borderRight: '1px solid #f0e000', // Border color and width
+                    borderLeft: '1px solid #f0e000', // Border color and width
+                    // borderBottom: '1px solid #f0e000', // Border color and width
+                    borderRadius: '10px',       // Rounded corners
+                    backgroundColor:'#000033',
+                    paddingBottom:20,
+                  }}>
                     <div className="proses-icon point-orange">
                       {/* <span className="rank">{coin.item.market_cap_rank}</span> */}
                       <span className="point-view">{coin.item.market_cap_rank}</span>

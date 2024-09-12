@@ -20,20 +20,38 @@ const PaymentHistoryArea = () => {
   ];
 
   return (
-    <div className="payment-history-area bg-color fix area-padding-2">
-      <div className="container">
+    <div className="payment-history-area  fix area-padding-2"  style={{
+      color: '#fff', 
+      // border: '1px solid #f0e000', // Border color and width
+      borderRight: '1px solid #f0e000', // Border color and width
+      borderLeft: '1px solid #f0e000', // Border color and width
+      borderBottom: '1px solid #f0e000', // Border color and width
+      borderRadius: '10px',       // Rounded corners
+      backgroundColor:'#000033',
+      paddingBottom:20,
+    }}>
+      <div className="container" style={{
+                        color: '#fff', 
+                        // border: '1px solid #f0e000', // Border color and width
+                        borderRight: '1px solid #f0e000', // Border color and width
+                        borderLeft: '1px solid #f0e000', // Border color and width
+                        borderBottom: '1px solid #f0e000', // Border color and width
+                        borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#000033',
+                        paddingBottom:20,
+                      }} >
         <div className="row">
           <div className="col-md-12 col-sm-12 col-xs-12">
             <div className="section-headline text-center">
               <h3 style={{
                 // fontWeight: "bold",
-                color: "#000033",
+                color: "#fff",
                 fontSize: "26px", 
                 lineHeight: "1.2",
               }}>Deposits and Withdrawals: Evidence of Investor Success</h3>
               <p style={{
                 // fontWeight: "bold",
-                color: "#000033",
+                color: "#fff",
                 // fontSize: "16px", 
                 lineHeight: "1.2",
                 // fontFamily: "'Brush Script MT', cursive",
@@ -46,14 +64,39 @@ const PaymentHistoryArea = () => {
         <div className="row">
           <div className="col-md-12 col-sm-12 col-xs-12">
             <div className="deposite-content">
-              <div className="diposite-box">
+              <div className="diposite-box"  style={{
+                        color: '#fff', 
+                        // border: '1px solid #f0e000', // Border color and width
+                        borderRight: '1px solid #f0e000', // Border color and width
+                        borderLeft: '1px solid #f0e000', // Border color and width
+                        // borderBottom: '1px solid #f0e000', // Border color and width
+                        borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#000033',
+                        paddingBottom:20,
+                      }}>
                 <h4>Recent Deposits</h4>
                 <span><i className="flaticon-005-savings"></i></span>
-                <div className="deposite-table">
+                <div className="deposite-table"  style={{
+                        color: '#fff', 
+                        // border: '1px solid #f0e000', // Border color and width
+                        borderRight: '1px solid #f0e000', // Border color and width
+                        borderLeft: '1px solid #f0e000', // Border color and width
+                        // borderBottom: '1px solid #f0e000', // Border color and width
+                        borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#000033',
+                        paddingBottom:20,
+                      }}>
                   <table  className="table table-striped  table-hover table-sm">
                   <caption>we are proud to showcase the recent transactions made by our valued investors.</caption>
                     <thead style={{ backgroundColor: "#000033", color: "#fff" }}>
-                      <tr>
+                      <tr  style={{
+                        color: '#fff', 
+                        border: '3px solid #f0e000', // Border color and width
+                        
+                        borderRadius: '20px',       // Rounded corners
+                        backgroundColor:'#000033',
+                        paddingBottom:20,
+                      }}>
                         <th>Name</th>
                         <th>Date</th>
                         <th>Amount</th>
@@ -62,7 +105,16 @@ const PaymentHistoryArea = () => {
                     </thead>
                     <tbody>
                       {deposits.map(deposit => (
-                        <tr key={deposit.id}>
+                        <tr key={deposit.id}  style={{
+                          color: '#fff', 
+                          border: '2px solid #f0e000', // Border color and width
+                          borderRight: '1px solid #f0e000', // Border color and width
+                          borderLeft: '1px solid #f0e000', // Border color and width
+                          borderBottom: '5px solid #f0e00c', // Border color and width
+                          borderRadius: '10px',       // Rounded corners
+                          backgroundColor:'#000033',
+                          paddingBottom:20,
+                        }}>
                           <td>{deposit.name}</td>
                           <td>{deposit.date}</td>
                           <td>{deposit.amount}</td>
@@ -74,15 +126,51 @@ const PaymentHistoryArea = () => {
                 </div>
               </div>
             </div>
-            <div className="deposite-content">
-              <div className="diposite-box">
+            <div className="deposite-content"  style={{
+                        color: '#fff', 
+                        // border: '1px solid #f0e000', // Border color and width
+                        // borderRight: '1px solid #f0e000', // Border color and width
+                        // borderLeft: '1px solid #f0e000', // Border color and width
+                        // borderBottom: '1px solid #f0e000', // Border color and width
+                        borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#000033',
+                        paddingBottom:20,
+                      }}>
+              <div className="diposite-box"  style={{
+                        color: '#fff', 
+                        // border: '1px solid #f0e000', // Border color and width
+                        borderRight: '1px solid #f0e000', // Border color and width
+                        borderLeft: '1px solid #f0e000', // Border color and width
+                        // borderBottom: '1px solid #f0e000', // Border color and width
+                        borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#000033',
+                        paddingBottom:20,
+                      }}>
                 <h4>Recent Withdrawals</h4>
                 <span><i className="flaticon-042-wallet"></i></span>
-                <div className="deposite-table">
+                <div className="deposite-table"  style={{
+                        color: '#fff', 
+                        // border: '1px solid #f0e000', // Border color and width
+                        borderRight: '1px solid #f0e000', // Border color and width
+                        borderLeft: '1px solid #f0e000', // Border color and width
+                        // borderBottom: '1px solid #f0e000', // Border color and width
+                        borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#000033',
+                        paddingBottom:20,
+                      }}>
                 <table  className="table table-striped  table-hover table-sm">
                 <caption>we are proud to showcase the recent transactions made by our valued investors.</caption>
                     <thead style={{ backgroundColor: "#000033", color: "#fff" }}>
-                      <tr>
+                      <tr  style={{
+                        color: '#fff', 
+                        border: '2px solid #f0e000', // Border color and width
+                        borderRight: '1px solid #f0e000', // Border color and width
+                        borderLeft: '1px solid #f0e000', // Border color and width
+                        borderBottom: '5px solid #f0e00c', // Border color and width
+                        borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#000033',
+                        paddingBottom:20,
+                      }}>
                         <th>Name</th>
                         <th>Date</th>
                         <th>Amount</th>
@@ -91,7 +179,16 @@ const PaymentHistoryArea = () => {
                     </thead>
                     <tbody>
                       {withdrawals.map(withdrawal => (
-                        <tr key={withdrawal.id}>
+                        <tr key={withdrawal.id}  style={{
+                          color: '#fff', 
+                          border: '2px solid #f0e000', // Border color and width
+                          borderRight: '1px solid #f0e000', // Border color and width
+                          borderLeft: '1px solid #f0e000', // Border color and width
+                          borderBottom: '1px solid #f0e000', // Border color and width
+                          borderRadius: '10px',       // Rounded corners
+                          backgroundColor:'#000033',
+                          paddingBottom:20,
+                        }}>
                           <td>{withdrawal.name}</td>
                           <td>{withdrawal.date}</td>
                           <td>{withdrawal.amount}</td>
