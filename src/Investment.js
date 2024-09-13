@@ -12,6 +12,7 @@ const investmentPlans = [
     maximumInvest: '$1,000',
     averageMonthly: '50%',
     label: null,
+    image: './images/cryto1.jpeg',
     link: '/register'
   },
   {
@@ -22,6 +23,7 @@ const investmentPlans = [
     maximumInvest: '$10,000',
     averageMonthly: '100%',
     label: null,
+    image: './images/cryto6.jpeg', // Add your image path here
     link: '/register'
   },
   {
@@ -32,6 +34,7 @@ const investmentPlans = [
     maximumInvest: '$50,000',
     averageMonthly: '200%',
     label: 'Popular',
+    image: './images/cryto2.jpeg',
     link: '/register'
   },
   {
@@ -42,6 +45,7 @@ const investmentPlans = [
     maximumInvest: '$50,000',
     averageMonthly: '250%',
     label: 'Best Sale',
+    image: './images/cryto5.jpeg', // Add your image path here
     link: '/register'
   },
   {
@@ -52,6 +56,7 @@ const investmentPlans = [
     maximumInvest: '$50,000',
     averageMonthly: '300%',
     label: null,
+    image: './images/cryto2.jpeg',
     link: '/register'
   },
   {
@@ -62,6 +67,7 @@ const investmentPlans = [
     maximumInvest: '$70,000',
     averageMonthly: '325%',
     label: 'Best Plan',
+    image: './images/cryto2.jpeg',
     link: '/register'
   },
   {
@@ -72,6 +78,7 @@ const investmentPlans = [
     maximumInvest: '$50,000',
     averageMonthly: '350%',
     label: null,
+    image: './images/cryto2.jpeg',
     link: '/register'
   },
   {
@@ -82,6 +89,7 @@ const investmentPlans = [
     maximumInvest: '$50,000',
     averageMonthly: '400%',
     label: 'Top Plan',
+    image: './images/cryto3.jpeg',
     link: '/register'
   },
 ];
@@ -128,9 +136,9 @@ export default function Investment() {
             </div>
             <div className="row">
               <div className="pricing-content">
-                {investmentPlans.map(plan => (
+                {/* {investmentPlans.map(plan => (
                   <div key={plan.id} className="col-md-3 col-sm-6 col-xs-12">
-                    <div className="pri_table_list">
+                    <div className="pri_table_list" >
                       <div className="top-price-inner">
                         {plan.label && <span className="base">{plan.label}</span>}
                         <div className="rates">
@@ -149,7 +157,39 @@ export default function Investment() {
                       </div>
                     </div>
                   </div>
-                ))}
+                ))} */}
+                 {investmentPlans.map(plan => (
+            <div className="col-md-3 col-sm-6 col-xs-12" key={plan.id} >
+               <div className="card-image-wrapper">
+                  <img src={plan.image} alt={plan.label} className="card-image" />
+                </div>
+              <div className="pri_table_list" style={{
+                        // border: '2px solid #000033', // Border color and width
+                        border: '5px solid #f0e000', // Border color and width
+                        borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#ffffff'
+                      }}>
+                {plan.label && <span className="base">{plan.label}</span>}
+                {/* <div className="card-image-wrapper">
+                  <img src={plan.image} alt={plan.label} className="card-image" />
+                </div> */}
+                <div className="top-price-inner">
+                  <div className="rates">
+                    <span className="prices">{plan.rate}</span><span className="users">Daily</span>
+                  </div>
+                  <span className="per-day">{plan.duration}</span>
+                </div>
+                <ol className="pricing-text" style={{backgroundColor:'#f0f0ff', color:'#000033', textAlign:'center', borderRadius:1, padding:1,}}>
+                  <li className="check">Minimum Invest : {plan.minInvest}</li>
+                  <li className="check">Maximum Invest : {plan.maxInvest}</li>
+                  <li className="check">Average Monthly : {plan.avgMonthly}</li>
+                </ol>
+                <div className="price-btn blue">
+                  <Link className="blue" to="/register">Deposit</Link>
+                </div>
+              </div>
+            </div>
+          ))}
               </div>
             </div>
           </div>

@@ -91,13 +91,24 @@ const SignUp = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 col-xs-12">
-              <div className="breadcrumb text-center">
+              <div className="breadcrumb text-center" >
                 <div className="section-headline white-headline">
                   <h3>Register</h3>
                 </div>
-                <ul className="breadcrumb-bg" style={{ color: "#000033", backgroundColor: "#f5d108" }}>
+                <ul className="breadcrumb-bg" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                  paddingBottom:20,
+                  padding:5,
+                  justifyContent:'space-between'
+                }}>
                   {/* <li className="home-bread">Home</li> */}
-                  <Link className="home-bread" to="/" style={{ color: "#fff", backgroundColor: "#f5d108" }}>
+                  <Link className="home-bread" to="/" style={{ color: "#fff", backgroundColor: "#f5d108", padding:5, fontWeight:'bolder' }}>
                         Home
                     </Link>
                   <li>Register</li>
@@ -111,7 +122,18 @@ const SignUp = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 col-xs-12">
-              <div className="login-page signup-page">
+              <div className="login-page signup-page" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                  paddingBottom:20,
+                  padding:5,
+                  justifyContent:'space-between'
+                }}>
                 <div className="login-form signup-form">
                   <h4 className="login-title">REGISTER</h4>
                   <div className="row">

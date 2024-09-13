@@ -83,7 +83,18 @@ const Blog = () => {
           <div className="row">
             <div className="blog-grid home-blog">
               {blogPosts.map((post) => (
-                <div key={post.id} className="col-md-4 col-sm-6 col-xs-12">
+                <div key={post.id} className="col-md-4 col-sm-5 col-xs-12"  style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                  paddingBottom:20,
+                  padding:5,
+                  justifyContent:'space-between'
+                }}>
                   <div className="single-blog">
                     <div className="blog-image">
                       <Link className="image-scale" to={`/blog/${post.id}`}>
@@ -103,9 +114,9 @@ const Blog = () => {
                         </span>
                       </div>
                       <Link to={`/blog/${post.id}`}>
-                        <h4>{post.title}</h4>
+                        <h4 style={{color:'#fff'}}>{post.title}</h4>
                       </Link>
-                      <Link to={`/blog/${post.id}`} className="read-more-btn">
+                      <Link to={`/blog/${post.id}`} className="read-more-btn" style={{color:'#f0ef00'}}>
                         Read More
                       </Link>
                     </div>

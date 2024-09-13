@@ -1006,9 +1006,9 @@ span.users {
 /*  9.Payment History area
 /*----------------------------------------*/
 .payment-history-area {
-    background: url(./images/cryptocurrency.jpg);
+    /* background: url(./images/cryptocurrency.jpg); */
     /* background: url(./images/fly-coins.jpg); */
-    /* background: url(img/background/bg3.jpg); */
+    background: url(img/background/bg3.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;

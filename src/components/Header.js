@@ -1622,7 +1622,7 @@ const Header = () => {
                                 <div className="mobile-menu" style={{ color: "#fff", backgroundColor: "#000033" }}>
                                     <div className="logo">
                                         <Link to="/">
-                                        <img src="./images/dlogo.png" alt="" width={80} height={80} />
+                                        <img src="./images/dlogo.png" alt="" width={400} height={200} />
                                         </Link>
                                     </div>
                                     <nav id="dropdown" style={{ color: "#fff", backgroundColor: "#000033" }}>

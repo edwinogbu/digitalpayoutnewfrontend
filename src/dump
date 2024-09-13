@@ -1087,3 +1087,254 @@ export default App;
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div className="blog-area fix bg-color area-padding-2">
+  <div className="container">
+    <div className="row">
+      <div className="col-md-12 col-sm-12 col-xs-12">
+        <div className="section-headline text-center">
+          <h3 style={{
+        // fontFamily: "'Brush Script MT', cursive",
+        fontWeight: "bold",
+        color: "#000033",
+        fontSize: "46px", 
+        lineHeight: "1.2", 
+    }}>Global investment plan news</h3>
+          <p>
+            Stay updated with the latest trends and insights in the crypto investment world.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div className="row">
+      <div className="blog-grid home-blog">
+        
+        <div className="col-md-4 col-sm-6 col-xs-12"  style={{
+                        color: '#fff', 
+                        // border: '1px solid #f0e000', // Border color and width
+                        borderRight: '1px solid #f0e000', // Border color and width
+                        borderLeft: '1px solid #f0e000', // Border color and width
+                        borderBottom: '1px solid #f0e000', // Border color and width
+                        borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#000033',
+                        paddingBottom:20,
+                      }}>
+          <div className="single-blog">
+            <div className="blog-image">
+              <a className="image-scale" href="#">
+                <img src="img/blog/b1.jpg" alt="Crypto Market Overview" />
+              </a>
+            </div>
+            <div className="blog-content">
+              <div className="blog-meta">
+                <span className="admin-type">
+                  <i className="fa fa-user" />
+                  Admin
+                </span>
+                <span className="date-type">
+                  <i className="fa fa-calendar" />
+                  17 August, 2024
+                </span>
+                <span className="comments-type">
+                  <i className="fa fa-comment-o" />
+                  13
+                </span>
+              </div>
+              <a href="#">
+                <h4>Crypto Market Overview: Key Trends and Future Predictions</h4>
+              </a>
+              <a href="#" className="read-more-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        {/* End single blog */}
+        
+        {/* Start single blog */}
+        <div className="col-md-4 col-sm-6 col-xs-12"  style={{
+                        color: '#fff', 
+                        // border: '1px solid #f0e000', // Border color and width
+                        borderRight: '1px solid #f0e000', // Border color and width
+                        borderLeft: '1px solid #f0e000', // Border color and width
+                        borderBottom: '1px solid #f0e000', // Border color and width
+                        borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#000033',
+                        paddingBottom:20,
+                      }}>
+          <div className="single-blog">
+            <div className="blog-image">
+              <a className="image-scale" href="#">
+                <img src="img/blog/b2.jpg" alt="Bitcoin's Market Influence" />
+              </a>
+            </div>
+            <div className="blog-content">
+              <div className="blog-meta">
+                <span className="admin-type">
+                  <i className="fa fa-user" />
+                  Admin
+                </span>
+                <span className="date-type">
+                  <i className="fa fa-calendar" />
+                  17 August, 2024
+                </span>
+                <span className="comments-type">
+                  <i className="fa fa-comment-o" />
+                  16
+                </span>
+              </div>
+              <a href="#">
+                <h4 style={{color:'#fff'}}>How Bitcoin's Market Influence is Shaping Global Finance</h4>
+              </a>
+              <a href="#" className="read-more-btn" style={{color:'#f0ef00'}}>Read More</a>
+            </div>
+          </div>
+        </div>
+        {/* End single blog */}
+        
+        {/* Start single blog */}
+        <div className="col-md-4 col-sm-6 col-xs-12">
+          <div className="single-blog">
+            <div className="blog-image">
+              <a className="image-scale" href="#">
+                <img src="img/blog/b3.jpg" alt="Decentralized Finance" />
+              </a>
+            </div>
+            <div className="blog-content">
+              <div className="blog-meta">
+                <span className="admin-type">
+                  <i className="fa fa-user" />
+                  Admin
+                </span>
+                <span className="date-type">
+                  <i className="fa fa-calendar" />
+                  17 August, 2024
+                </span>
+                <span className="comments-type">
+                  <i className="fa fa-comment-o" />
+                  7
+                </span>
+              </div>
+              <a href="#">
+                <h4>The Rise of Decentralized Finance: What Investors Should Know</h4>
+              </a>
+              <a href="#" className="read-more-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        {/* End single blog */}
+        
+        {/* Start single blog */}
+        <div className="col-md-4 col-sm-6 col-xs-12">
+          <div className="single-blog">
+            <div className="blog-image">
+              <a className="image-scale" href="#">
+                <img src="img/blog/b4.jpg" alt="Ethereum 2.0 Upgrade" />
+              </a>
+            </div>
+            <div className="blog-content">
+              <div className="blog-meta">
+                <span className="admin-type">
+                  <i className="fa fa-user" />
+                  Admin
+                </span>
+                <span className="date-type">
+                  <i className="fa fa-calendar" />
+                  17 August, 2024
+                </span>
+                <span className="comments-type">
+                  <i className="fa fa-comment-o" />
+                  32
+                </span>
+              </div>
+              <a href="#">
+                <h4>Ethereum 2.0: What the Upgrade Means for the Future of Crypto</h4>
+              </a>
+              <a href="#" className="read-more-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        {/* End single blog */}
+        
+        {/* Start single blog */}
+        <div className="col-md-4 col-sm-6 col-xs-12">
+          <div className="single-blog">
+            <div className="blog-image">
+              <a className="image-scale" href="#">
+                <img src="img/blog/b5.jpg" alt="Regulatory Challenges in Crypto" />
+              </a>
+            </div>
+            <div className="blog-content">
+              <div className="blog-meta">
+                <span className="admin-type">
+                  <i className="fa fa-user" />
+                  Admin
+                </span>
+                <span className="date-type">
+                  <i className="fa fa-calendar" />
+                  17 August, 2024
+                </span>
+                <span className="comments-type">
+                  <i className="fa fa-comment-o" />
+                  32
+                </span>
+              </div>
+              <a href="#">
+                <h4>Regulatory Challenges and Their Impact on Crypto Markets</h4>
+              </a>
+              <a href="#" className="read-more-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        {/* End single blog */}
+        
+        {/* Start single blog */}
+        <div className="col-md-4 col-sm-6 col-xs-12">
+          <div className="single-blog">
+            <div className="blog-image">
+              <a className="image-scale" href="#">
+                <img src="img/blog/b6.jpg" alt="Altcoins to Watch in 2024" />
+              </a>
+            </div>
+            <div className="blog-content">
+              <div className="blog-meta">
+                <span className="admin-type">
+                  <i className="fa fa-user" />
+                  Admin
+                </span>
+                <span className="date-type">
+                  <i className="fa fa-calendar" />
+                  17 August, 2024
+                </span>
+                <span className="comments-type">
+                  <i className="fa fa-comment-o" />
+                  32
+                </span>
+              </div>
+              <a href="#">
+                <h4>Top 5 Altcoins to Watch in 2024</h4>
+              </a>
+              <a href="#" className="read-more-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        {/* End single blog */}
+      </div>
+    </div>
+    {/* End row */}
+  </div>
+</div>

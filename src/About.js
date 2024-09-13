@@ -30,8 +30,19 @@ export default function About() {
        <CryptoCurrencyCarouselArea />
         <div className="about-area page-padding">
           <div className="container">
-            <div className="row">
-              <div className="col-md-6 col-sm-12 col-xs-12">
+            <div className="row" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                  paddingBottom:20,
+                  padding:5,
+                  justifyContent:'space-between'
+                }}>
+              <div className="col-md-6 col-sm-12 col-xs-12" >
                 <div className="about-image">
                   <img alt="" src="img/about/ab.jpg" />
                   <div className="video-content">
@@ -46,15 +57,15 @@ export default function About() {
               </div>
               <div className="col-md-6 col-sm-12 col-xs-12">
                 <div className="about-content">
-                  <h3>
+                  <h3 style={{color:'#fff'}}>
                     Welcome to Digital PayOut, your gateway to the world of cryptocurrency investment!
                   </h3>
-                  <p>
+                  <p style={{color:'#fff'}}>
                     Cryptocurrency has revolutionized the way we think about money and financial transactions.
                     With its decentralized nature, limited supply, and increasing adoption, cryptocurrency has 
                     proven to be a lucrative investment opportunity for those who grasp its potential.
                   </p>
-                  <p>
+                  <p style={{color:'#fff'}}>
                     At Digital PayOut, we offer a secure, user-friendly platform for individuals and institutions 
                     to invest in Bitcoin and tap into its vast potential to earn massive ROI on your investment. 
                     Whether you're a seasoned investor or new to the world of cryptocurrency, our expert team and 
@@ -77,14 +88,25 @@ export default function About() {
           <div className="container">
             <div className="row">
               <div className="about-mission">
-                <div className="col-md-4 col-sm-4 col-xs-12">
-                  <div className="mission-about">
+                <div className="col-md-4 col-sm-4 col-xs-12" >
+                  <div className="mission-about" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                  paddingBottom:20,
+                  padding:5,
+                  justifyContent:'space-between'
+                }}>
                     <div className="mission-icon">
                       <i className="flaticon-004-bar-chart" />
                     </div>
                     <div className="mission-text">
-                      <h4>Our Mission</h4>
-                      <p>
+                      <h4 style={{color:'#fff'}}>Our Mission</h4>
+                      <p style={{color:'#fff'}}>
                         At Digital PayOut, our mission is to provide a secure and user-friendly platform for 
                         cryptocurrency investment, empowering individuals and institutions to achieve financial 
                         success.
@@ -93,13 +115,24 @@ export default function About() {
                   </div>
                 </div>
                 <div className="col-md-4 col-sm-4 col-xs-12">
-                  <div className="mission-about">
+                  <div className="mission-about" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                  paddingBottom:20,
+                  padding:5,
+                  justifyContent:'space-between'
+                }}>
                     <div className="mission-icon">
                       <i className="flaticon-031-release" />
                     </div>
                     <div className="mission-text">
-                      <h4>Our Vision</h4>
-                      <p>
+                      <h4 style={{color:'#fff'}}>Our Vision</h4>
+                      <p style={{color:'#fff'}}>
                         Our vision is to lead the cryptocurrency investment industry by delivering unparalleled 
                         service and innovative solutions that drive financial growth for our clients.
                       </p>
@@ -107,13 +140,24 @@ export default function About() {
                   </div>
                 </div>
                 <div className="col-md-4 col-sm-4 col-xs-12">
-                  <div className="mission-about">
+                  <div className="mission-about" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                  paddingBottom:20,
+                  padding:5,
+                  justifyContent:'space-between'
+                }}>
                     <div className="mission-icon">
                       <i className="flaticon-023-management" />
                     </div>
                     <div className="mission-text">
-                      <h4>Our Experience</h4>
-                      <p>
+                      <h4 style={{color:'#fff'}}>Our Experience</h4>
+                      <p style={{color:'#fff'}}>
                         With years of experience in the financial and technology sectors, Digital PayOut is well 
                         equipped to guide investors through the complexities of the cryptocurrency market.
                       </p>
