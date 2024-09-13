@@ -77,14 +77,28 @@ const CryptoCurrencyCarouselArea = () => {
         <div className="carousel-inner col-sm-12">
           {carouselItems.map((item, index) => (
             <div key={item.id} className={`item ${index === currentIndex ? 'active' : ''}`}>
-              <div className="carousel-content">
+              <div className="carousel-content container-fluid">
                 <div className="carousel-image col-sm-4">
-                  <img src={item.imgSrc} alt={`Crypto ${item.id}`} />
-                  <Link to="/register" className="ready-btn left-btn animated bounceIn" style={{ position: "absolute", top: "210px", padding: "5px", left: "50%", transform: "translateX(-50%)", zIndex: "-3" }}>Get started</Link>
+                  <img src={item.imgSrc} alt={`Crypto ${item.id}`} width={400}/>
+                  <Link to="/register" className="ready-btn left-btn animated bounceIn"
+                   style={{  left: "50%", transform: "translateX(-50%)", zIndex: "-1" }}
+                  //  style={{ position: "absolute", top: "210px", padding: "5px", left: "50%", transform: "translateX(-50%)", zIndex: "-3" }}
+                   >Get started</Link>
 
                 </div>
-                <div className="carousel-text col-sm-12">
-                  <h2 className="text-white" style={{ fontWeight: "bold", color: "#fff", fontSize: "16px", lineHeight: "1.2" }}>
+                <div className="carousel-text col-sm-12" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                  // paddingBottom:20,
+                  padding:25,
+                  // justifyContent:'space-between'
+                }}>
+                  <h2 className="text-white" style={{ fontWeight: "bold", color: "#fff", fontSize: "14px", lineHeight: "1.5", borderRadius:1, borderBottom:'2px solid #f0e00f' }}>
                     {item.title}
                   </h2>
                   {item.benefits.map((benefit, idx) => (
@@ -105,9 +119,9 @@ const CryptoCurrencyCarouselArea = () => {
           <span className="glyphicon glyphicon-chevron-right" aria-hidden="true" />
           <span className="sr-only">Next</span>
         </a>
-        <div className="layer-1-3">
+        {/* <div className="layer-1-3">
           <Link to="/register" className="ready-btn left-btn animated bounceIn" style={{ position: "absolute", top: "210px", padding: "5px", left: "50%", transform: "translateX(-50%)", zIndex: "-3" }}>Get started</Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

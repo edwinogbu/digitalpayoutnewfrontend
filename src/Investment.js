@@ -108,9 +108,9 @@ export default function Investment() {
                   <div className="section-headline white-headline">
                     <h3>Investment Plan</h3>
                   </div>
-                  <ul className="breadcrumb-bg" style={{ color: "#000033", backgroundColor: "#f5d108" }}>
+                  <ul className="breadcrumb-bg" style={{ color: "#fff", backgroundColor: "#000033", border:'3px solid #f5d108', borderRadius:20, }}>
                     <li className="home-bread">
-                    <Link className="home-bread" to="/" style={{ color: "#fff", backgroundColor: "#f5d108" }}>
+                    <Link className="home-bread" to="/" style={{ color: "#fff", backgroundColor: "#f5d108", padding:20 }}>
                         Home
                     </Link>
                       

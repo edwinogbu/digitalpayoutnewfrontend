@@ -138,10 +138,90 @@
     }
 }
 
-        </style>
+/* <!-- Inline CSS for WhatsApp Button --> */
+        .whatsapp-chat-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
 
-  </head>
-  <body>
+        .whatsapp-btn {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%; /* Fully rounded */
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        /* Tooltip */
+        .whatsapp-tooltip {
+            visibility: hidden;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            bottom: 70px; 
+            right: 10px;
+            font-size: 12px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .whatsapp-btn:hover .whatsapp-tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Hover Effect */
+        .whatsapp-btn:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+            background-color: #22bb58; /* Darken the color on hover */
+        }
+
+        .whatsapp-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 8px;
+        }
+
+        .whatsapp-text {
+            display: none; /* Hide text to only show the icon */
+        }
+
+        @media (max-width: 576px) {
+            .whatsapp-chat-button {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .whatsapp-btn {
+                padding: 8px;
+                font-size: 12px;
+            }
+
+            .whatsapp-icon {
+                width: 36px;
+                height: 36px;
+            }
+
+            .whatsapp-text {
+                display: block; /* Show text on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -154,7 +234,48 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-   
+    <!-- WhatsApp Chat Button -->
+    <!-- <div class="whatsapp-chat-button">
+        <a href="https://wa.me/+2348064033538" target="_blank" class="whatsapp-btn">
+            <img src="/images/whatsApp_icon.png" alt="WhatsApp" class="whatsapp-icon" > 
+            <span class="whatsapp-text">Chat with us</span>
+        </a>
+    </div> -->
+
+        <!-- WhatsApp Chat Button -->
+        <div class="whatsapp-chat-button">
+            <a
+                href="https://wa.me/+2348064033538?text=Hi%2C%20I%20need%20help%20with..."
+                target="_blank"
+                class="whatsapp-btn"
+                aria-label="Chat with us on WhatsApp"
+                onclick="playSound()" 
+                onmouseover="playSound()"  
+            >
+                <img
+                    src="/images/whatsApp_icon.png" 
+                    alt="WhatsApp"
+                    class="whatsapp-icon"
+                />
+                <span class="whatsapp-text">Chat with us</span>
+                <span class="whatsapp-tooltip">Chat on WhatsApp</span> <!-- Tooltip -->
+            </a>
+        </div>
+    
+        <!-- Add the sound file -->
+        <audio id="click-sound">
+            <source src="/sounds/bell-sound.mp3" type="audio/mpeg">
+        </audio>
+    
+        <!-- JavaScript to Play Sound -->
+        <script>
+            function playSound() {
+                var clickSound = document.getElementById('click-sound');
+                clickSound.play();
+            }
+        </script>
+
+
 		<!-- jquery latest version -->
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 		<!-- bootstrap js -->

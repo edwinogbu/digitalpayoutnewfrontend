@@ -44,7 +44,7 @@ export default function About() {
                 }}>
               <div className="col-md-6 col-sm-12 col-xs-12" >
                 <div className="about-image">
-                  <img alt="" src="img/about/ab.jpg" />
+                  <img alt="" src="img/crypto/cryto1.jpeg" width={800}/>
                   <div className="video-content">
                     <a
                       className="video-play vid-zone"
@@ -193,14 +193,24 @@ export default function About() {
               <div className="col-md-6 col-sm-6 col-xs-12">
                 <div className="feature-content">
                   <div className="feature-images">
-                    <img alt="" src="img/feature/f1.jpg" />
+                    <img alt="" src="img/crypto/cryto5.jpeg" width={800} />
                   </div>
                 </div>
               </div>
               <div className="col-md-6 col-sm-6 col-xs-12">
                 <div className="feature-text">
                   <h3>Your investment money is more safe and secure</h3>
-                  <p>
+                  <p style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                  paddingBottom:20,
+                  padding:35,
+                }}>
                     At Digital PayOut, we offer a secure, user-friendly platform for individuals and institutions 
                     to invest in Bitcoin and tap into its vast potential to earn massive ROI on your investment. 
                     Whether you're a seasoned investor or new to the world of cryptocurrency, our expert team and 

@@ -12,6 +12,7 @@ import PaymentHistoryArea from './components/PaymentHistoryArea';
 import TestimonialCarousel from './components/TestimonialCarousel';
 import CryptoCurrencyCarouselArea from './components/CryptoCurrencyCarouselArea';
 import BlogArea from './components/BlogArea';
+import { Link } from 'react-router-dom';
 
 function WelcomePage() {
   const [marketData, setMarketData] = useState([]);
@@ -1552,11 +1553,12 @@ function WelcomePage() {
             <div className="col-md-12 col-sm-12 col-xs-12">
                 <div className="section-headline text-center">
                     <h3 style={{
-                        // fontFamily: "'Brush Script MT', cursive",
+                        fontFamily: "'Brush Script MT', cursive",
                         fontWeight: "bold",
                         color: "#fff",
-                        fontSize: "16px",
+                        fontSize: "26px",
                         lineHeight: "1.2",
+                        padding:5,
                     }}>Why Choose Digital PayOut</h3>
                     <p  style={{color:'white'}}>Welcome to Digital PayOut, your gateway to the world of cryptocurrency investment. Tap into the potential of Bitcoin and earn massive ROI with our secure, user-friendly platform, designed for both individual and institutional investors.</p>
                 </div>
@@ -1566,81 +1568,153 @@ function WelcomePage() {
             <div className="support-all">
                 {/* Expert Management */}
                 <div className="col-md-6 col-sm-6 col-xs-12">
-                    <div className="support-services wow">
-                        <a className="support-images" href="#"><i className="flaticon-023-management" /></a>
+                    <div className="support-services wow" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                 
+                }}>
+                        <Link className="support-images" href="#" style={{color:'#fff'}}><i className="flaticon-023-management" /></Link>
                         <div className="support-content">
-                            <h4>Expert Management</h4>
-                            <p>Our seasoned team of cryptocurrency experts uses cutting-edge technology to guide you through every step of your investment journey, helping you make informed decisions to maximize your returns.</p>
+                            <h4 style={{color:'#fff'}}>Expert Management</h4>
+                            <p style={{color:'#fff'}}>Our seasoned team of cryptocurrency experts uses cutting-edge technology to guide you through every step of your investment journey, helping you make informed decisions to maximize your returns.</p>
                         </div>
                     </div>
                 </div>
                 {/* Secure Investment */}
                 <div className="col-md-6 col-sm-6 col-xs-12">
-                    <div className="support-services">
-                        <a className="support-images" href="#"><i className="flaticon-036-security" /></a>
+                    <div className="support-services" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                 
+                }}>
+                        <a className="support-images" href="#" style={{color:'#fff'}}><i className="flaticon-036-security" /></a>
                         <div className="support-content">
-                            <h4>Secure Investment</h4>
-                            <p>Invest with confidence on our platform, which offers top-tier security measures, including two-factor authentication, encryption, and continuous monitoring to safeguard your assets.</p>
+                            <h4 style={{color:'#fff'}}>Secure Investment</h4>
+                            <p style={{color:'#fff'}}>Invest with confidence on our platform, which offers top-tier security measures, including two-factor authentication, encryption, and continuous monitoring to safeguard your assets.</p>
                         </div>
                     </div>
                 </div>
                 {/* Registered Company */}
                 <div className="col-md-6 col-sm-6 col-xs-12">
-                    <div className="support-services">
-                        <a className="support-images" href="#"><i className="flaticon-003-approve" /></a>
+                    <div className="support-services" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                 
+                }}>
+                        <a className="support-images" href="#" style={{color:'#fff'}}><i className="flaticon-003-approve" /></a>
                         <div className="support-content">
-                            <h4>Registered Company</h4>
-                            <p>Digital PayOut is a fully registered and compliant investment platform, ensuring transparency, trust, and adherence to global financial regulations.</p>
+                            <h4 style={{color:'#fff'}}>Registered Company</h4>
+                            <p style={{color:'#fff'}}>Digital PayOut is a fully registered and compliant investment platform, ensuring transparency, trust, and adherence to global financial regulations.</p>
                         </div>
                     </div>
                 </div>
                 {/* Instant Withdrawal */}
                 <div className="col-md-6 col-sm-6 col-xs-12">
-                    <div className="support-services">
-                        <a className="support-images" href="#"><i className="flaticon-042-wallet" /></a>
+                    <div className="support-services" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                 
+                }}>
+                        <a className="support-images" href="#" style={{color:'#fff'}}><i className="flaticon-042-wallet" /></a>
                         <div className="support-content">
-                            <h4>Instant Withdrawal</h4>
-                            <p>Benefit from the flexibility of instant withdrawals, giving you full control over your earnings. Withdraw your profits at any time with ease and convenience.</p>
+                            <h4 style={{color:'#fff'}}>Instant Withdrawal</h4>
+                            <p style={{color:'#fff'}}>Benefit from the flexibility of instant withdrawals, giving you full control over your earnings. Withdraw your profits at any time with ease and convenience.</p>
                         </div>
                     </div>
                 </div>
                 {/* Verified Security */}
                 <div className="col-md-6 col-sm-6 col-xs-12">
-                    <div className="support-services">
-                        <a className="support-images" href="#"><i className="flaticon-032-report" /></a>
+                    <div className="support-services" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                 
+                }}>
+                        <a className="support-images" href="#" style={{color:'#fff'}}><i className="flaticon-032-report" /></a>
                         <div className="support-content">
-                            <h4>Verified Security</h4>
-                            <p>Your investments are protected by verified security protocols, including advanced encryption and secure cold storage solutions, ensuring the highest level of asset protection.</p>
+                            <h4 style={{color:'#fff'}}>Verified Security</h4>
+                            <p style={{color:'#fff'}}>Your investments are protected by verified security protocols, including advanced encryption and secure cold storage solutions, ensuring the highest level of asset protection.</p>
                         </div>
                     </div>
                 </div>
                 {/* User-Friendly Platform */}
                 <div className="col-md-6 col-sm-6 col-xs-12">
-                    <div className="support-services">
-                        <a className="support-images" href="#"><i className=" ti-briefcase" /></a>
+                    <div className="support-services" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                 
+                }}>
+                        <a className="support-images" href="#" style={{color:'#fff'}}><i className=" ti-briefcase" /></a>
                         <div className="support-content">
-                            <h4>User-Friendly Platform</h4>
-                            <p>Our intuitive platform is designed for users of all experience levels. Whether you're a beginner or a seasoned investor, you can easily navigate our interface to manage your investments effectively.</p>
+                            <h4 style={{color:'#fff'}}>User-Friendly Platform</h4>
+                            <p style={{color:'#fff'}}>Our intuitive platform is designed for users of all experience levels. Whether you're a beginner or a seasoned investor, you can easily navigate our interface to manage your investments effectively.</p>
                         </div>
                     </div>
                 </div>
                 {/* 24/7 Customer Support */}
                 <div className="col-md-6 col-sm-6 col-xs-12">
-                    <div className="support-services">
-                        <a className="support-images" href="#"><i className="ti-support" /></a>
+                    <div className="support-services" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                 
+                }}>
+                        <a className="support-images" href="#" style={{color:'#fff'}}><i className="ti-support" /></a>
                         <div className="support-content">
-                            <h4>24/7 Customer Support</h4>
-                            <p>We offer round-the-clock customer support to assist you with any inquiries or issues. Our dedicated team is always available to ensure you have a seamless investment experience.</p>
+                            <h4 style={{color:'#fff'}} >24/7 Customer Support</h4>
+                            <p style={{color:'#fff'}}>We offer round-the-clock customer support to assist you with any inquiries or issues. Our dedicated team is always available to ensure you have a seamless investment experience.</p>
                         </div>
                     </div>
                 </div>
                 {/* Innovative Technology */}
                 <div className="col-md-6 col-sm-6 col-xs-12">
-                    <div className="support-services">
-                        <a className="support-images" href="#"><i className="ti-target" /></a>
+                    <div className="support-services" style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                 
+                }}>
+                        <Link className="support-images" href="#" style={{color:'#fff'}}><i className="ti-target" /></Link>
                         <div className="support-content">
-                            <h4>Innovative Technology</h4>
-                            <p>Leverage the latest in blockchain technology and Artificial Intelligence-driven analytics to make smarter investment decisions and stay ahead in the rapidly evolving world of cryptocurrency.</p>
+                            <h4 style={{color:'#fff'}}>Innovative Technology</h4>
+                            <p style={{color:'#fff'}}>Leverage the latest in blockchain technology and Artificial Intelligence-driven analytics to make smarter investment decisions and stay ahead in the rapidly evolving world of cryptocurrency.</p>
                         </div>
                     </div>
                 </div>
@@ -1650,14 +1724,25 @@ function WelcomePage() {
                         <div className="support-content text-center">
                             <h1 style={{color:'white'}}>How to Start</h1>
                             <p style={{color:'white'}}>Getting started with Digital PayOut is simple:</p>
-                            <ul>
-                                <p style={{color:'white'}}><strong style={{color:'teal'}}>Sign Up:</strong> Create your account on our platform by providing your basic details.</p>
-                                <p style={{color:'white'}}><strong style={{color:'teal'}}>Verify Your Identity:</strong> Complete the KYC (Know Your Customer) process to ensure compliance and security.</p>
-                                <p style={{color:'white'}}><strong style={{color:'teal'}}>Fund Your Account:</strong> Deposit funds using a variety of payment methods, including bank transfers, credit/debit cards, or other cryptocurrencies.</p>
-                                <p style={{color:'white'}}><strong style={{color:'teal'}}>Start Investing:</strong> Choose your preferred cryptocurrency, such as Bitcoin, and make your investment.</p>
-                                <p style={{color:'white'}}><strong style={{color:'teal'}}>Monitor & Withdraw:</strong> Track your investments in real-time and withdraw your profits instantly whenever you wish.</p>
+                            <ul style={{
+                  color: '#fff', 
+                  border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '10px',       // Rounded corners
+                  backgroundColor:'#000033',
+                  paddingBottom:20,
+                  padding:5,
+                  justifyContent:'space-between'
+                }}>
+                                <p style={{color:'white'}}><strong style={{color:'#f0e000'}}>Sign Up:</strong> Create your account on our platform by providing your basic details.</p>
+                                <p style={{color:'white'}}><strong style={{color:'#f0e000'}}>Verify Your Identity:</strong> Complete the KYC (Know Your Customer) process to ensure compliance and security.</p>
+                                <p style={{color:'white'}}><strong style={{color:'#f0e000'}}>Fund Your Account:</strong> Deposit funds using a variety of payment methods, including bank transfers, credit/debit cards, or other cryptocurrencies.</p>
+                                <p style={{color:'white'}}><strong style={{color:'#f0e000'}}>Start Investing:</strong> Choose your preferred cryptocurrency, such as Bitcoin, and make your investment.</p>
+                                <p style={{color:'white'}}><strong style={{color:'#f0e000'}}>Monitor & Withdraw:</strong> Track your investments in real-time and withdraw your profits instantly whenever you wish.</p>
                             </ul>
-                            <p>Join the Digital PayOut community today and start building your cryptocurrency portfolio with ease!</p>
+                            <p style={{color:'#fff'}}>Join the Digital PayOut community today and start building your cryptocurrency portfolio with ease!</p>
                         </div>
                     </div>
                 </div>
@@ -1669,203 +1754,23 @@ function WelcomePage() {
 
 <PaymentHistoryArea />
 
-  {/* End Support-service Area */}
-  {/* Start Work proses Area */}
-  {/* <div className="work-proses fix bg-color area-padding-2">
-    <div className="container">
-      <div className="row">
-        <div className="col-md-12 col-sm-12 col-xs-12">
-          <div className="section-headline text-center">
-            <h3>Referral bonus level</h3>
-            <p>Help agencies to define their new business objectives and then create professional software.</p>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-md-12 col-sm-12 col-xs-12">
-          <div className="row">
-            <div className="work-proses-inner text-center">
-              <div className="col-md-3 col-sm-3 col-xs-12">
-                <div className="single-proses">
-                  <div className="proses-content">
-                    <div className="proses-icon point-blue">
-                      <span className="point-view">01</span>
-                      <a href="#"><i className="ti-briefcase" /></a>
-                    </div>
-                    <div className="proses-text">
-                      <h4>Level 01 instant 30% commission</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="col-md-3 col-sm-3 col-xs-12">
-                <div className="single-proses">
-                  <div className="proses-content">
-                    <div className="proses-icon point-orange">
-                      <span className="point-view">02</span>
-                      <a href="#"><i className="ti-layers" /></a>
-                    </div>
-                    <div className="proses-text">
-                      <h4>Level 02 instant 20% commission</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-             
-              <div className="col-md-3 col-sm-3 col-xs-12">
-                <div className="single-proses last-item">
-                  <div className="proses-content">
-                    <div className="proses-icon point-green">
-                      <span className="point-view">03</span>
-                      <a href="#"><i className="ti-bar-chart-alt" /></a>
-                    </div>
-                    <div className="proses-text">
-                      <h4>Level 03 instant 10% commission</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-             
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> */}
-  {/* <TrendingCoin /> */}
-  {/* End Work proses Area */}
-  {/*Start payment-history area */}
-  {/* <div className="payment-history-area bg-color fix area-padding-2">
-    <div className="container">
-      <div className="row">
-        <div className="col-md-12 col-sm-12 col-xs-12">
-          <div className="section-headline text-center">
-            <h3>Deposite and withdrawals history</h3>
-            <p>Help agencies to define their new business objectives and then create professional software.</p>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-md-12 col-sm-12 col-xs-12">
-          <div className="deposite-content">
-            <div className="diposite-box">
-              <h4>Last deposite</h4>
-              <span><i className="flaticon-005-savings" /></span>
-              <div className="deposite-table">
-                <table>
-                  <tbody><tr style={{"background-color":"#000033","color":"#fff"}}>
-                      <th>Name</th>
-                      <th>Date</th>
-                      <th>Amount</th>
-                      <th>Currency</th>
-                    </tr>
-                    <tr>
-                      <td>Admond sayhel</td>
-                      <td>Jan 02, 2020</td>
-                      <td>$1000</td>
-                      <td>Bitcoin</td>
-                    </tr>
-                    <tr>
-                      <td>Jonshon</td>
-                      <td>Dec 12, 2019</td>
-                      <td>$5000</td>
-                      <td>USD</td>
-                    </tr>
-                    <tr>
-                      <td>Hopper</td>
-                      <td>Dec 22, 2019</td>
-                      <td>$4000</td>
-                      <td>Ripple</td>
-                    </tr>
-                    <tr>
-                      <td>Admond sayhel</td>
-                      <td>Jan 02, 2020</td>
-                      <td>$3000</td>
-                      <td>Bitcoin</td>
-                    </tr>
-                    <tr>
-                      <td>Anjel july</td>
-                      <td>Jan 05, 2020</td>
-                      <td>$500</td>
-                      <td>USD</td>
-                    </tr>
-                    <tr>
-                      <td>Lagisha</td>
-                      <td>Jan 12, 2020</td>
-                      <td>$5000</td>
-                      <td>Bitcoin</td>
-                    </tr>
-                  </tbody></table>
-              </div>
-            </div>
-          </div>
-          <div className="deposite-content">
-            <div className="diposite-box">
-              <h4>Last withdrawals</h4>
-              <span><i className="flaticon-042-wallet" /></span>
-              <div className="deposite-table">
-                <table>
-                  <tbody><tr style={{"background-color":"#000033","color":"#fff"}}>
-                      <th>Name</th>
-                      <th>Date</th>
-                      <th>Amount</th>
-                      <th>Currency</th>
-                    </tr>
-                    <tr>
-                      <td>Arnold</td>
-                      <td>Jan 04, 2020</td>
-                      <td>$1000</td>
-                      <td>USD</td>
-                    </tr>
-                    <tr>
-                      <td>Jhon Abra</td>
-                      <td>Jan 07, 2020</td>
-                      <td>$6000</td>
-                      <td>USD</td>
-                    </tr>
-                    <tr>
-                      <td>Lanisha</td>
-                      <td>Jan 13, 2020</td>
-                      <td>$5000</td>
-                      <td>USD</td>
-                    </tr>
-                    <tr>
-                      <td>Gongales</td>
-                      <td>Jan 12, 2020</td>
-                      <td>$2000</td>
-                      <td>USD</td>
-                    </tr>
-                    <tr>
-                      <td>Admond sayhel</td>
-                      <td>Jan 10, 2020</td>
-                      <td>$1000</td>
-                      <td>USD</td>
-                    </tr>
-                    <tr>
-                      <td>Remond</td>
-                      <td>Jan 02, 2020</td>
-                      <td>$3000</td>
-                      <td>USD</td>
-                    </tr>
-                  </tbody></table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> */}
-  {/* <InvestArea /> */}
-  {/* End payment-history area */}
   {/* Start Banner Area */}
-  <div className="banner-area area-padding">
+  <div className="banner-area area-padding" style={{
+                  color: '#fff', 
+                  // border: '1px solid #f0e000', // Border color and width
+                  borderRight: '1px solid #f0e000', // Border color and width
+                  borderLeft: '1px solid #f0e000', // Border color and width
+                  borderBottom: '1px solid #f0e000', // Border color and width
+                  borderRadius: '20px',       // Rounded corners
+                  backgroundColor:'#000033',
+                
+                }}>
     <div className="container">
       <div className="row">
         <div className="col-md-12 col-sm-12 col-xs-12">
           <div className="banner-all area-80 text-center">
             <div className="banner-content">
-              <h3>Our investment plan world wide business relations for development</h3>
+              <h3 style={{color:'#f0e000', backgroundColor:'#000033', borderRadius:25, padding:5,}}>Our investment plan world wide business relations for development</h3>
               <a className="banner-btn" href="signup.html">Sign up now</a>
             </div>
           </div>
@@ -1873,7 +1778,7 @@ function WelcomePage() {
       </div>
     </div>
   </div>
-  {/* End Banner Area */}
+
   {/* Start Blog Area*/}
   {/* <div className="blog-area fix bg-color area-padding-2">
     <div className="container">

@@ -68,7 +68,7 @@ const BlogArea = () => {
         fontSize: "46px", 
         lineHeight: "1.2", 
     }}>Global investment plan news</h3>
-                <p>
+                <p style={{color:'#f0e000', backgroundColor:'#000033', borderRadius:25, padding:5,}}>
                   Stay updated with the latest trends and insights in the crypto investment world.
                 </p>
               </div>

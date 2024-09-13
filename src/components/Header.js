@@ -1533,6 +1533,9 @@ const Header = () => {
                                     <ul>
                                         <li style={{ color: "#000033", backgroundColor: "#f5d108" }}><Link to="#" style={{color:'#000033'}}><i className="fa fa-envelope"  style={{color:'#000033'}}/> info@digitalpayout.com</Link></li>
                                         <li style={{ color: "#000033", backgroundColor: "#f5d108" }}><Link to="/contact-us" style={{color:'#000033'}}><i className="fa fa-phone"  style={{color:'#000033'}}/> +234-6542-9805</Link></li>
+                                        <Link className="navbar-brand page-scroll black-logo" to="/" >
+                                                <img src="./images/dlogo.png" alt="" width={80} height={80}  style={{backgroundColor:'#000033'}}/>
+                                            </Link>
                                     </ul>
                                 </div>
                             </div>
@@ -1577,7 +1580,7 @@ const Header = () => {
                             <div className="col-md-12 col-sm-12">
                                 <div className="row">
                                     {/* logo start */}
-                                    <div className="col-md-3 col-sm-3">
+                                    {/* <div className="col-md-3 col-sm-3">
                                         <div className="logo">
                                             <Link className="navbar-brand page-scroll white-logo" href="index.html">
                                                 <img src="./images/dlogo.png" alt="" width={80} height={80} />
@@ -1586,12 +1589,11 @@ const Header = () => {
                                                 <img src="./images/dlogo.png" alt="" width={80} height={80} />
                                             </Link>
                                         </div>
-                                    </div>
-                                    <div className="col-md-9 col-sm-9">
-                                        <div className="header-right-link">
+                                    </div> */}
+                                    <div className="col-md-12 col-sm-12">
+                                        {/* <div className="header-right-link">
                                             <Link className="s-menu" to="http://localhost:3001/login">Wallet</Link>
-                                            {/* <Link className="s-menu" to="/login">Account</Link> */}
-                                        </div>
+                                        </div> */}
                                         {/* mainmenu start */}
                                         <nav className={navClass}>
                                             <div className="collapse navbar-collapse" id="navbar-example">

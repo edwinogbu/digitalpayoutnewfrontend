@@ -87,7 +87,7 @@ const PaymentHistoryArea = () => {
                         paddingBottom:20,
                       }}>
                   <table  className="table table-striped  table-hover table-sm">
-                  <caption>we are proud to showcase the recent transactions made by our valued investors.</caption>
+                  <caption style={{color:'#fff', textAlign:'center'}}>we are proud to showcase the recent transactions made by our valued investors.</caption>
                     <thead style={{ backgroundColor: "#000033", color: "#fff" }}>
                       <tr  style={{
                         color: '#fff', 
@@ -159,7 +159,7 @@ const PaymentHistoryArea = () => {
                         paddingBottom:20,
                       }}>
                 <table  className="table table-striped  table-hover table-sm">
-                <caption>we are proud to showcase the recent transactions made by our valued investors.</caption>
+                <caption style={{color:'#fff', textAlign:'center'}}>we are proud to showcase the recent transactions made by our valued investors.</caption>
                     <thead style={{ backgroundColor: "#000033", color: "#fff" }}>
                       <tr  style={{
                         color: '#fff', 
