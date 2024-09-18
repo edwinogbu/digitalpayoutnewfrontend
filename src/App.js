@@ -15,6 +15,7 @@ import Blog from './Blog';
 import BlogDetail from './BlogDetail';
 import About from './About';
 import Investment from './Investment';
+import BlogDetails from './BlogDetails';
 
 const App = () => {
   const dashboardBasePath = "/dashboard";
@@ -29,7 +30,7 @@ const App = () => {
           <Routes>
             <Route path="/*" element={<WelcomePage />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:id" element={<BlogDetail />} />
+            <Route path="/blog/:id" element={<BlogDetails />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/about" element={<About />} />
             <Route path="/register" element={<SignUp />} />

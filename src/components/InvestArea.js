@@ -47,6 +47,8 @@ const InvestArea = () => {
   ];
 
   return (
+
+    <>
     <div className="invest-area bg-color area-padding-2" style={{
       color: '#fff', 
       // border: '1px solid #f0e000', // Border color and width
@@ -141,6 +143,8 @@ const InvestArea = () => {
         </div>
       </div>
     </div>
+    
+    </>
   );
 };
 

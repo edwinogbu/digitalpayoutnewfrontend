@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import { Link } from 'react-router-dom';
+import Footer from './components/Footer';
 
 // Define investment plans as an array of objects
 const investmentPlans = [
@@ -196,6 +197,7 @@ export default function Investment() {
         </div>
         <div className="clearfix" />
       </div>
+      <Footer />
     </>
   );
 }

@@ -328,7 +328,7 @@ const TestimonialCarousel = () => {
                 <div className={`item ${carouselIndex === currentIndex ? 'active' : ''}`} key={carouselIndex}>
                   <div className="row">
                     {testimonials.slice(carouselIndex * 4, carouselIndex * 4 + 4).map((testimonial) => (
-                      <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 testimonial-card" key={testimonial.id} style={{
+                      <div className="col-lg-3 col-md-4 col-sm-4 col-xs-12 testimonial-card" key={testimonial.id} style={{
                         color: '#fff', 
                         // border: '1px solid #f0e000', // Border color and width
                         borderRight: '1px solid #f0e000', // Border color and width
@@ -337,6 +337,7 @@ const TestimonialCarousel = () => {
                         borderRadius: '10px',       // Rounded corners
                         backgroundColor:'#000033',
                         paddingBottom:20,
+                        // margin:0
                       }}>
                         <div className="fun_text" style={{ minHeight: '200px', textAlign: 'center' }}>
                           <img 

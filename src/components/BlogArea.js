@@ -1,58 +1,82 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const blogPosts = [
-  {
-    id: 1,
-    title: "Crypto Market Overview: Key Trends and Future Predictions",
-    image: "img/blog/b1.jpg",
-    altText: "Crypto Market Overview",
-    date: "17 August, 2024",
-    comments: 13,
-  },
-  {
-    id: 2,
-    title: "How Bitcoin's Market Influence is Shaping Global Finance",
-    image: "img/blog/b2.jpg",
-    altText: "Bitcoin's Market Influence",
-    date: "17 August, 2024",
-    comments: 16,
-  },
-  {
-    id: 3,
-    title: "The Rise of Decentralized Finance: What Investors Should Know",
-    image: "img/blog/b3.jpg",
-    altText: "Decentralized Finance",
-    date: "17 August, 2024",
-    comments: 7,
-  },
-  {
-    id: 4,
-    title: "Ethereum 2.0: What the Upgrade Means for the Future of Crypto",
-    image: "img/blog/b4.jpg",
-    altText: "Ethereum 2.0 Upgrade",
-    date: "17 August, 2024",
-    comments: 32,
-  },
-  {
-    id: 5,
-    title: "Regulatory Challenges and Their Impact on Crypto Markets",
-    image: "img/blog/b5.jpg",
-    altText: "Regulatory Challenges in Crypto",
-    date: "17 August, 2024",
-    comments: 32,
-  },
-  {
-    id: 6,
-    title: "Top 5 Altcoins to Watch in 2024",
-    image: "img/blog/b6.jpg",
-    altText: "Altcoins to Watch in 2024",
-    date: "17 August, 2024",
-    comments: 32,
-  },
-];
+import axios from 'axios';
+
+
+// const blogPosts = [
+//   {
+//     id: 1,
+//     title: "Crypto Market Overview: Key Trends and Future Predictions",
+//     image: "img/blog/b1.jpg",
+//     altText: "Crypto Market Overview",
+//     date: "17 August, 2024",
+//     comments: 13,
+//   },
+//   {
+//     id: 2,
+//     title: "How Bitcoin's Market Influence is Shaping Global Finance",
+//     image: "img/blog/b2.jpg",
+//     altText: "Bitcoin's Market Influence",
+//     date: "17 August, 2024",
+//     comments: 16,
+//   },
+//   {
+//     id: 3,
+//     title: "The Rise of Decentralized Finance: What Investors Should Know",
+//     image: "img/blog/b3.jpg",
+//     altText: "Decentralized Finance",
+//     date: "17 August, 2024",
+//     comments: 7,
+//   },
+//   {
+//     id: 4,
+//     title: "Ethereum 2.0: What the Upgrade Means for the Future of Crypto",
+//     image: "img/blog/b4.jpg",
+//     altText: "Ethereum 2.0 Upgrade",
+//     date: "17 August, 2024",
+//     comments: 32,
+//   },
+//   {
+//     id: 5,
+//     title: "Regulatory Challenges and Their Impact on Crypto Markets",
+//     image: "img/blog/b5.jpg",
+//     altText: "Regulatory Challenges in Crypto",
+//     date: "17 August, 2024",
+//     comments: 32,
+//   },
+//   {
+//     id: 6,
+//     title: "Top 5 Altcoins to Watch in 2024",
+//     image: "img/blog/b6.jpg",
+//     altText: "Altcoins to Watch in 2024",
+//     date: "17 August, 2024",
+//     comments: 32,
+//   },
+// ];
 
 const BlogArea = () => {
+  const [blogPosts, setBlogPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const response = await axios.get('http://localhost:3005/api/blogs/published');
+        if (response && Array.isArray(response.data.data)) {
+          setBlogPosts(response.data.data);
+        } else {
+          setBlogPosts([]);
+        }
+      } catch (error) {
+        console.error('Unable to fetch blogs', error);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
+
+
+
   return (
     <>
   
@@ -75,42 +99,45 @@ const BlogArea = () => {
             </div>
           </div>
           <div className="row">
-            <div className="blog-grid home-blog">
+          <div className="blog-grid home-blog">
               {blogPosts.map((post) => (
-                <div key={post.id} className="col-md-4 col-sm-5 col-xs-12"  style={{
-                  color: '#fff', 
-                  border: '1px solid #f0e000', // Border color and width
-                  borderRight: '1px solid #f0e000', // Border color and width
-                  borderLeft: '1px solid #f0e000', // Border color and width
-                  borderBottom: '1px solid #f0e000', // Border color and width
-                  borderRadius: '10px',       // Rounded corners
-                  backgroundColor:'#000033',
-                  paddingBottom:20,
-                  padding:5,
-                  justifyContent:'space-between'
+                <div key={post.id} className="col-md-4 col-sm-5 col-xs-12 p-3 m-3" style={{
+                  color: '#fff',
+                  border: '1px solid #f0e000',
+                  borderRadius: '10px',
+                  backgroundColor: '#000033',
+                  paddingBottom: 20,
+                  padding: 5,
+                  margin:5,
+                  justifyContent: 'space-between',
                 }}>
                   <div className="single-blog">
                     <div className="blog-image">
                       <Link className="image-scale" to={`/blog/${post.id}`}>
-                        <img src={post.image} alt={post.altText} />
+                        {/* Ensure image URL is valid */}
+                        <img
+                          src={post.imageUrl ? `http://localhost:3005/${post.imageUrl}` : 'images/bg1.jpg'}
+                          alt={post.title}
+                          style={{ width: '100%', height: 'auto' }}
+                        />
                       </Link>
                     </div>
                     <div className="blog-content">
                       <div className="blog-meta">
                         <span className="admin-type">
-                          <i className="fa fa-user" /> Admin
+                          <i className="fa fa-user" /> {post.author}
                         </span>
                         <span className="date-type">
-                          <i className="fa fa-calendar" /> {post.date}
+                          <i className="fa fa-calendar" /> {post.createdAt}
                         </span>
                         <span className="comments-type">
                           <i className="fa fa-comment-o" /> {post.comments}
                         </span>
                       </div>
                       <Link to={`/blog/${post.id}`}>
-                        <h4 style={{color:'#fff'}}>{post.title}</h4>
+                        <h4 style={{ color: '#fff' }}>{post.title}</h4>
                       </Link>
-                      <Link to={`/blog/${post.id}`} className="read-more-btn" style={{color:'#f0ef00'}}>
+                      <Link to={`/blog/${post.id}`} className="read-more-btn" style={{ color: '#f0ef00' }}>
                         Read More
                       </Link>
                     </div>
